@@ -1,0 +1,11 @@
+.secondDiv{
+    font-size: large;
+    text-align: center;
+    margin: 3px;
+    min-height: 300px;
+    background-color: silver;
+}
+
+body{
+    background-color: slateblue;
+}
