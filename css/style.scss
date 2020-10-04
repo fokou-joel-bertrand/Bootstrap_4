@@ -73,3 +73,20 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+.background-modal-header {
+    background-color: $background-dark;
+}
+
+#tableReservationDismiss, #login-times-dismiss {
+    color: $lt-gray;
+}
+
+.modal-body {
+    background-color: $background-pale;
+    margin: 0px;
+}
+
+.modal-title, #dismiss-modal-login, #tableReservationCancelButton {
+    color: floralwhite;
+}
