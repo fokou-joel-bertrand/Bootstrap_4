@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+$(document).ready(function(){
 
     $('#loginModal').modal('hide');
     $('#reservationTableModal').modal('hide');
@@ -7,28 +7,28 @@ $(document).ready(()=>{
     $('#reserveTableButton').attr('data-target', '#reservationTableModal');
     $('#reserveTableButton').attr('data-toggle', 'modal');
 
-    $('#reserveTableButton').click('on', ()=>{
+    $('#reserveTableButton').click('on', function(){
         $('#reservationTableModal').modal('show');
     });
-    $('#tableReservationDismiss').click('on', ()=>{
+    $('#tableReservationDismiss').click('on', function(){
         $('#reservationTableModal').modal('hide');
     });
-    $('#tableReservationCancelButton').click('on', ()=>{
+    $('#tableReservationCancelButton').click('on', function(){
         $('#reservationTableModal').modal('hide');
     });
 
-    $('#login').click('on', ()=>{
+    $('#login').click('on', function(){
         $('#loginModal').modal('show');
     });
-    $('#dismiss-modal-login').click('on', ()=>{
+    $('#dismiss-modal-login').click('on', function(){
         $('#loginModal').modal('hide');
     });
-    $('#login-times-dismiss').click('on', ()=>{
+    $('#login-times-dismiss').click('on', function(){
         $('#loginModal').modal('hide');
     });
 
     $('#mycarousel').carousel({interval : 2000})
-    $('#carouselButton').click(()=>{
+    $('#carouselButton').click(function(){
         if ($('#carouselButton').children('span').hasClass('fa-pause')) {
             $('#mycarousel').carousel('pause');
             $('#carouselButton').children('span').removeClass('fa-pause');
